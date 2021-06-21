@@ -20,7 +20,7 @@ router.post('/shoots', shoot_controller.shoot_create_post)
 router.get('/shoots/:shootId/comments',  comment_controller.comment_list)
 
 /* POST a specific shoot's comments. */
-router.post('/shoots/:shootId/comments',  comment_controller.comment_create_post)
+router.post('/comments',  comment_controller.comment_create_post)
 
 
 
