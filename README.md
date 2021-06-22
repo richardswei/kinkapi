@@ -23,14 +23,14 @@ GET `localhost:3000/api/v1/shoots/{id}/comments`
 post a shoot</br>
 POST `localhost:3000/api/v1/shoots/`
 ```
-payload
+//payload
 {"shoot_title": "Awesome shoot"}
 ```
 post a comment (the shoot must already exist & comments can only contain latin characters and the following punctuation ! , .)</br>
 POST `localhost:3000/api/v1/comments`
 
 ```
-payload
+//payload
 {
     "shootId": 1,
     "comment": "Nice!"
