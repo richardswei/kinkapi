@@ -39,6 +39,7 @@ POST `localhost:3000/api/v1/comments`
 
 ### NOTES
 - I didn't really have time to write adequate tests. I have some positive tests but I'm really lacking the negative checks for should fail
+- If I had more time or foresight I would have created some sort of constants file for caught exceptions. This would make processing exceptions as they are caught in the sata-service or controller more simple and clear.
 - Normally I'd also go back and break up the api/data/data_access_service.js into their own services for the purposes of separations of concerns
 - The same goes for the routes in api/routes/base.js
 - There's also boilerplate (pug views and stylesheets) I should have removed as well
