@@ -13,5 +13,5 @@ exports.shoot_detail = async function(req, res) {
 
 // Handle Shoot create on POST.
 exports.shoot_create_post = async function(req, res) {
-    res.send(await dataAccessService.post_shoot(req.body));
+    res.status(201).send(await dataAccessService.post_shoot(req.body));
 };

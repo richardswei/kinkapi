@@ -10,7 +10,7 @@ exports.comment_list = async function(req, res) {
 // Handle Comment create on POST.
 exports.comment_create_post = async function(req, res) {
     try {
-        res.send(await dataAccessService.post_comment(req.body));
+        res.status(201).send(await dataAccessService.post_comment(req.body));
     } catch (error) {
         if (error == 'noShootError') {
             res.status(404).send('Shoot does not exist!')
