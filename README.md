@@ -9,23 +9,23 @@ npm start
 
 ### Available endpoints
 
-ping the server
-GET `localhost3000ping`
+ping the server</br>
+GET `localhost:3000/ping`
 
-get specific shoot
-GET `localhost3000apiv1shoots{id}`
+get specific shoot</br>
+GET `localhost:3000/api/v1/shoots/{id}`
 
-get all comments
-GET `localhost3000apiv1shoots{id}comments`
+get all comments</br>
+GET `localhost:3000/api/v1/shoots/{id}/comments`
 
-post a shoot
-POST `localhost3000apiv1shoots`
+post a shoot</br>
+POST `localhost:3000/api/v1/shoots/`
 ```
 payload
 {shoot_title Awesome shoot}
 ```
-post a comment (the shoot must already exist & comments can only contain latin characters and the following punctuation ! , .)
-POST `localhost3000apiv1comments`
+post a comment (the shoot must already exist & comments can only contain latin characters and the following punctuation ! , .)</br>
+POST `localhost:3000/api/v1/comments`
 
 ```
 payload
@@ -38,6 +38,6 @@ payload
 ### NOTES
 - I didn't really have time to write adequate tests. I have some positive tests but I'm really lacking the negative checks for should fail
 
-- Normally I'd also go back and break up the apidatadata_access_service.js into their own services for the purposes of separations of concerns
+- Normally I'd also go back and break up the api/data/data_access_service.js into their own services for the purposes of separations of concerns
 
-- The same goes for the routes in apiroutesbase.js
+- The same goes for the routes in api/routes/base.js
