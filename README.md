@@ -3,10 +3,12 @@
 ### Getting Started
 Run the app with the following commands
 ```sh
-cd kinkapi
 npm start
 ```
-
+Run the tests with the following commands
+```sh
+npm test
+```
 ### Available endpoints
 
 ping the server</br>
@@ -30,14 +32,12 @@ POST `localhost:3000/api/v1/comments`
 ```
 payload
 {
-    shootId 1,
-    comment Nice!
+    "shootId": 1,
+    "comment": "Nice!"
 }
 ```
 
 ### NOTES
 - I didn't really have time to write adequate tests. I have some positive tests but I'm really lacking the negative checks for should fail
-
 - Normally I'd also go back and break up the api/data/data_access_service.js into their own services for the purposes of separations of concerns
-
 - The same goes for the routes in api/routes/base.js
